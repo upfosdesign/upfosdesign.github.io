@@ -1,0 +1,9 @@
+<ul class="link-list">
+    {% for item in site.data.products %}
+    <li>
+        <a class="page-link" style="color: #2C2C2C;" href="{{ item.link }}" target="_blank">
+            {{ item.name | escape }}
+        </a>
+    </li>
+    {% endfor %}
+</ul>
