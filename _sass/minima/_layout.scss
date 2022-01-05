@@ -178,6 +178,7 @@
 
         .title {
           margin-top: 10px;
+          font-weight: bold;
           @include media-query($on-palm) {
             margin-left: auto;
             margin-right: auto;
