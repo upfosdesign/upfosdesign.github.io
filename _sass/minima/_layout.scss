@@ -104,6 +104,7 @@
     .page-link {
       display: block;
       padding: 5px 10px;
+      color: $text-color;
 
       &:not(:last-child) {
         margin-right: 0;
@@ -121,12 +122,20 @@
   justify-content: space-between;
   align-items: center;
 
+  @include media-query($on-palm) {
+    flex-direction: column;
+  }
+
   > .content {
     display: flex; 
     flex-direction: column; 
     flex: 1; 
     align-items: center; 
     justify-content: center;
+
+    @include media-query($on-palm) {
+      margin-bottom: $spacing-unit;
+    }
 
     img.title {
       max-width: 400px;
@@ -137,13 +146,42 @@
       margin-top: $spacing-unit;
       color: #838383;
       font-size: 28px;
+
+      @include media-query($on-palm) {
+        margin-left: auto;
+        margin-right: auto;
+        color: lighten($color: $text-color, $amount: 32%)
+      }
     }
 
     .icons {
+      display: flex;
+      flex-direction: row;
       margin-top: $spacing-unit;
 
-      > img {
+      @include media-query($on-palm) {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .titled-icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         margin-right: $spacing-unit;
+
+        > img {
+          height: 60px;
+        }
+
+        .title {
+          margin-top: 10px;
+          @include media-query($on-palm) {
+            margin-left: auto;
+            margin-right: auto;
+            color: lighten($color: $text-color, $amount: 32%);
+          }
+        }
       }
     }
   }

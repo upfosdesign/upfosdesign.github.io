@@ -1,9 +1,9 @@
-- name: Designers
+- name: Design
   link: https://lanhuapp.com/url/IiGLR-Lh4JT
   icon: /assets/images/ic_link_design.svg
-- name: Developers
+- name: Development
   link: https://docs.upfos.xyz/
   icon: /assets/images/ic_link_develop.svg
 - name: Icons
-  link: https://iconfont.cn
+  link: https://www.iconfont.cn/collections/detail?cid=38202
   icon: /assets/images/ic_link_iconfont.svg

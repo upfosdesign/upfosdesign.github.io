@@ -8,9 +8,18 @@ layout: default
       <img class="title" src="{{ "/assets/images/home_title.png" | relative_url }}">
       <span class="description">{{ site.description }}</span>
       <div class="icons">
-        <img style="max-width: 120px;" src="{{ "/assets/images/ic_cart.svg" | relative_url }}">
-        <img style="max-width: 120px;" src="{{ "/assets/images/ic_people.svg" | relative_url }}">
-        <img style="max-width: 120px;" src="{{ "/assets/images/ic_caculator.svg" | relative_url }}">
+        <div class="titled-icon">
+          <img src="{{ "/assets/images/ic_cart.svg" | relative_url }}">
+          <span class="title">Open</span>
+        </div>
+        <div class="titled-icon">
+          <img src="{{ "/assets/images/ic_people.svg" | relative_url }}">
+          <span class="title">Persistant</span>
+        </div>
+        <div class="titled-icon">
+          <img src="{{ "/assets/images/ic_caculator.svg" | relative_url }}">
+          <span class="title">Growable</span>
+        </div>
       </div>
     </div>
   </div>
