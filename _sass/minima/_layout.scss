@@ -22,7 +22,7 @@
   }
 
   > img {
-    width: $title-logo-size;
+    height: $title-logo-size;
   }
 }
 
@@ -55,7 +55,8 @@
     }
 
     > img {
-      margin-right: $spacing-unit * 0.2
+      margin-right: $spacing-unit * 0.2;
+      margin-top: -3px;
     }
   }
 
@@ -150,7 +151,8 @@
       @include media-query($on-palm) {
         margin-left: auto;
         margin-right: auto;
-        color: lighten($color: $text-color, $amount: 32%)
+        color: lighten($color: $text-color, $amount: 32%);
+        font-size: 24px;
       }
     }
 

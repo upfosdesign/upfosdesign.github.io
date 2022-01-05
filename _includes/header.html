@@ -3,10 +3,9 @@
   <div class="wrapper">
     {% assign page_links = site.data.navigation %}
     <a class="site-title" rel="author" href="{{ "/" | relative_url }}">
-      <img src="{{ "/assets/images/logo.png" | relative_url }}">
-      {{ site.title | escape }}
+      <img src="{{ "/assets/images/logo_with_title.png" | relative_url }}">
+      <!-- {{ site.title | escape }} -->
     </a>
-
     {%- if page_links -%}
       <nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
