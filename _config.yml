@@ -26,6 +26,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://upfos.xyz" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: upfosdesign
 github_username:  upfosdesign
+google_analytics: true
 
 # Build settings
 theme: minima
